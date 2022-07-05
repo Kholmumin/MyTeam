@@ -239,6 +239,10 @@ body {
   color: var(--white);
 }
 
+.site-nav__link:hover{
+  color: var(--light-coral-color);
+}
+
 .site-header__contact {
   display: inline-block;
   margin-left: auto;
