@@ -2,7 +2,7 @@
 
 :root{
   --midnight-green-color: #014E56;
-  --light-coral-color: #014E56;
+  --light-coral-color: #f67e7e;
   --rapture-blue-color:#79C8C7;
   --police-group-color:#2C6269;
   --deep-jungle-blue-color:#004047;
@@ -89,5 +89,138 @@ body{
 .site-main{
   flex-grow: 1;
 }
+
+
+
+/* Farhod second section */
+
+
+
+.build
+{
+  padding: 140px 0 ;
+  background-color: var(--sacramento-state-green);
+}
+
+.build__inner
+{
+  display: flex;
+}
+
+.build__title-box
+{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.build__decor
+{
+  width: 50px;
+  height: 4px;
+  background: var(--light-coral-color);
+}
+
+.build__title
+{
+  margin-top: 54px;
+  width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.build__list
+{
+  position: relative;
+  padding: 0;
+  width: 540px;
+  list-style: none;
+}
+
+.build__list::after
+{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 244px;
+  bottom: -140px;
+  right: -265px;
+  background-image: url(../images/Group.svg);
+}
+
+.build__item
+{
+  position: relative;
+  display: flex;
+  padding-left: 95px;
+}
+
+.build__item:not(:last-child)
+{
+  margin-bottom: 32px;
+}
+
+.build__item::before
+{
+  position:absolute;
+  content: "";
+  margin-right: 23px;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+  background-image: url(../images/induviduals.svg);
+}
+
+.build__item:nth-child(2):before
+{
+  background-image: url(../images/implement.svg);
+}
+
+.build__item:nth-child(3):before
+{
+  background-image: url(../images/productivity.svg);
+}
+
+.build__item-title
+{
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--light-coral-color);
+}
+
+.build__text
+{
+  margin: 0;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
