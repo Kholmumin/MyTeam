@@ -1,8 +1,14 @@
-/* VARIABLES */
-
 :root {
   --midnight-green-color: #014E56;
   --light-coral-color: #f67e7e;
+
+  --rapture-blue-color:#79C8C7;
+  --police-group-color:#2C6269;
+  --deep-jungle-blue-color:#004047;
+  --sacramento-state-green:#012F34;
+  --dark-green:#002529;
+  --white:#ffff;
+
   --rapture-blue-color: #79C8C7;
   --police-group-color: #2C6269;
   --deep-jungle-blue-color: #004047;
@@ -20,7 +26,6 @@
     url('../fonts/livvic-v13-latin-italic.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/livvic-v13-latin-italic.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* livvic-600 - latin */
@@ -32,7 +37,6 @@
     url('../fonts/livvic-v13-latin-600.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/livvic-v13-latin-600.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
@@ -43,10 +47,9 @@
     url('../fonts/livvic-v13-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/livvic-v13-latin-700.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
 }
 
-/* GENERAL */
 
 html {
   height: 100%;
@@ -92,13 +95,116 @@ body {
   padding-left: 20px;
 }
 
-/* STICKY-FOOTER */
 .site-main {
   flex-grow: 1;
 }
 
+.build
+{
+  padding: 140px 0 ;
+  background-color: var(--sacramento-state-green);
+}
 
-/* HEADER */
+.build__inner
+{
+  display: flex;
+}
+
+.build__title-box
+{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.build__decor
+{
+  width: 50px;
+  height: 4px;
+  background: var(--light-coral-color);
+}
+
+.build__title
+{
+  margin-top: 54px;
+  width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.build__list
+{
+  position: relative;
+  padding: 0;
+  width: 540px;
+  list-style: none;
+}
+
+.build__list::after
+{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 244px;
+  bottom: -140px;
+  right: -265px;
+  background-image: url(../images/Group.svg);
+}
+
+.build__item
+{
+  position: relative;
+  display: flex;
+  padding-left: 95px;
+}
+
+.build__item:not(:last-child)
+{
+  margin-bottom: 32px;
+}
+
+.build__item::before
+{
+  position:absolute;
+  content: "";
+  margin-right: 23px;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+  background-image: url(../images/induviduals.svg);
+}
+
+.build__item:nth-child(2):before
+{
+  background-image: url(../images/implement.svg);
+}
+
+.build__item:nth-child(3):before
+{
+  background-image: url(../images/productivity.svg);
+}
+
+.build__item-title
+{
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--light-coral-color);
+}
+
+.build__text
+{
+  margin: 0;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 
 .site-header {
   padding: 73px 0;
@@ -170,9 +276,8 @@ body {
   font-size: 100px;
   line-height: 100px;
   color: #fff;
+ 
 }
-
-
 
 .hero-title__talent {
   color: var(--light-coral-color);
@@ -204,6 +309,5 @@ body {
   line-height: 28px;
   color: #FFFFFF;
 }
-
 
 
