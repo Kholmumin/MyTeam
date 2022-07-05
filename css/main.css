@@ -205,7 +205,7 @@ body {
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.8;
-
+}
 .site-header {
   padding: 73px 0;
   background-color: var(--midnight-green-color);
