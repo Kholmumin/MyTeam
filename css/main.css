@@ -1,14 +1,20 @@
-/* VARIABLES */
-
-:root{
+:root {
   --midnight-green-color: #014E56;
   --light-coral-color: #f67e7e;
+
   --rapture-blue-color:#79C8C7;
   --police-group-color:#2C6269;
   --deep-jungle-blue-color:#004047;
   --sacramento-state-green:#012F34;
   --dark-green:#002529;
   --white:#ffff;
+
+  --rapture-blue-color: #79C8C7;
+  --police-group-color: #2C6269;
+  --deep-jungle-blue-color: #004047;
+  --sacramento-state-green: #012F34;
+  --dark-green: #002529;
+  --white: #ffff;
 }
 
 
@@ -17,17 +23,20 @@
   font-style: italic;
   font-weight: 400;
   src: local(''),
-       url('../fonts/livvic-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/livvic-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/livvic-v13-latin-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/livvic-v13-latin-italic.woff') format('woff');
 }
+
 /* livvic-600 - latin */
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('../fonts/livvic-v13-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/livvic-v13-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/livvic-v13-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/livvic-v13-latin-600.woff') format('woff');
 }
 
 @font-face {
@@ -35,30 +44,31 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../fonts/livvic-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/livvic-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/livvic-v13-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/livvic-v13-latin-700.woff') format('woff');
+
 }
 
-/* GENERAL */
 
-html{
+html {
   height: 100%;
   box-sizing: border-box;
 }
 
-img{
+img {
   display: block;
   height: auto;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Livvic", "Arial", sans-serif;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 
@@ -77,7 +87,7 @@ body{
 
 /* CONTAINER */
 
-.container{
+.container {
   max-width: 1150px;
   margin-right: auto;
   margin-left: auto;
@@ -85,16 +95,9 @@ body{
   padding-left: 20px;
 }
 
-/* STICKY-FOOTER */
-.site-main{
+.site-main {
   flex-grow: 1;
 }
-
-
-
-/* Farhod second section */
-
-
 
 .build
 {
@@ -202,25 +205,109 @@ body{
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.8;
+
+.site-header {
+  padding: 73px 0;
+  background-color: var(--midnight-green-color);
+}
+
+.site-header__box {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin-right: 80px;
+}
+
+.site-nav__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.site-nav__item:first-child {
+  margin-right: 40px;
+}
+
+.site-nav__link,
+.site-header__contact {
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.site-header__contact {
+  display: inline-block;
+  margin-left: auto;
+  padding: 9px 33px 10px 32px;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.site-header__contact:hover {
+  color: var(--sacramento-state-green);
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.hero {
+  padding-top: 56px;
+  padding-bottom: 250px;
+  background-color: var(--midnight-green-color);
+  background-image: url("../images/hero-left.svg"),url("../images/hero-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 900px) +35px, calc(50% + 405px) calc(50% + 250px);
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+ 
+}
+
+.hero-title__talent {
+  color: var(--light-coral-color);
+}
+
+.hero-wrapper__left{
+  width: 535px;
+}
+
+.hero-wrapper__right{
+  position: relative;
+  width: 445px;
+}
+
+.hero-wrapper__right::before{
+  position: absolute;
+  top: -80px;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  content: "";
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero-wrapper__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
 
 
