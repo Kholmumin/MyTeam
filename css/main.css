@@ -117,6 +117,15 @@ body {
   margin-right: auto;
 }
 
+.build__title::before{
+  position: absolute;
+  top: -54px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--light-coral-color);
+  content: "";
+}
+
 .build__decor
 {
   width: 50px;
@@ -126,7 +135,8 @@ body {
 
 .build__title
 {
-  margin-top: 54px;
+  position: relative;
+  margin-top: 0;
   width: 445px;
   font-weight: 700;
   font-size: 48px;
@@ -137,6 +147,7 @@ body {
 .build__list
 {
   position: relative;
+
   padding: 0;
   width: 540px;
   list-style: none;
