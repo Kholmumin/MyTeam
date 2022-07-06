@@ -243,14 +243,16 @@ body {
 }
 
 .site-nav__link,
-.site-header__contact {
+.site-header__contact,
+.footer-left__link {
   font-size: 18px;
   line-height: 28px;
   text-decoration: none;
   color: var(--white);
 }
 
-.site-nav__link:hover{
+.site-nav__link:hover,
+.footer-left__link:hover{
   color: var(--light-coral-color);
 }
 
@@ -465,6 +467,132 @@ body {
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
+}
+
+
+.ready {
+  padding: 76px 0;
+  background-color: var(--light-coral-color);
+  background-image: url("../images/left-ready.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 796px) calc(50% + 118px);
+}
+
+.ready-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ready__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--sacramento-state-green);
+}
+
+.ready__contact {
+  display: inline-block;
+  padding: 9px 33px 11px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--sacramento-state-green);
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.ready__contact:hover {
+  color: var(--white);
+  background-color: var(--sacramento-state-green);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.site-footer {
+  padding: 48px 0;
+  background-color: var(--dark-green);
+}
+
+.site-footer-box {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__left {
+  margin-right: 145px;
+}
+
+.footer-left__bottom {
+  margin-top: 25px;
+}
+
+.footer-left__link {
+  display: inline-block;
+}
+
+.footer-left__link:first-child {
+  margin-right: 40px;
+}
+
+.site-footer__center {
+  width: 170px;
+}
+
+.site-footer__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.site-footer__text a{
+  /* display: inline-block; */
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.site-footer__right{
+  margin-left: auto;
+  text-align: right;
+}
+
+.site-right-box{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 51px;
+}
+
+.site-right__link{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.site-right__link:not(:last-child){
+  margin-right: 16px;
+}
+
+.site-right__link:hover{
+  color: var(--light-coral-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.site-right__text{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: var(--white);
+  opacity: 0.6;
 }
 
 
